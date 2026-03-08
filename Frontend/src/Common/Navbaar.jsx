@@ -466,17 +466,18 @@ export default function Navbar() {
 
             {/* ── Logo — LEFT corner with padding ── */}
             <NavLink to="/" className="flex items-center flex-shrink-0 group focus:outline-none pl-0 pr-6 lg:pr-10">
-              <img src="/logo.webp" alt="Logo"
-                className="h-9 sm:h-11 lg:h-[50px] w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04]"
-                onError={(e) => { e.target.style.display = "none"; e.target.nextSibling.style.display = "flex"; }}
-              />
+             <img
+  src="/logo.png"
+  alt="Logo"
+  className="h-18 sm:h-20 lg:h-24 relative top-2.5 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.04]"
+/>
               {/* Fallback */}
               <div style={{ display: "none" }} className="items-center gap-2.5">
                 <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-br from-red-600 via-red-700 to-yellow-500 flex items-center justify-center shadow-lg">
                   <span className="text-white font-black text-lg leading-none">M</span>
                 </div>
                 <div className="flex flex-col leading-none">
-                  <span className="text-red-700 font-black text-sm sm:text-base tracking-tight">MUTHOOT</span>
+                  <span className="text-red-700 font-black text-sm sm:text-base tracking-tight">GANESH</span>
                   <span className="text-yellow-600 font-bold text-[10px] sm:text-xs tracking-[0.18em] uppercase">Finance</span>
                 </div>
               </div>
@@ -545,7 +546,7 @@ export default function Navbar() {
                 <div className="w-9 h-9 rounded-full bg-gradient-to-br from-red-600 to-yellow-500 flex items-center justify-center">
                   <span className="text-white font-black">M</span>
                 </div>
-                <span className="text-red-700 font-black text-sm">MUTHOOT <span className="text-yellow-600">FINANCE</span></span>
+                <span className="text-red-700 font-black text-sm">GANESH <span className="text-yellow-600">FINANCE</span></span>
               </div>
             </NavLink>
             <button onClick={() => setMobileOpen(false)}
