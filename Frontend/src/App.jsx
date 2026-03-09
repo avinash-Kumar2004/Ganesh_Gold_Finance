@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "./Common/Navbaar";
 import Navbar from "./Common/Navbaar";
+import ServiceDetail from "./pages/ServiceDetail";  // ✅ pehle se hai
 
 import Home               from "./component/Home";
 import About              from "./component/About";
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/careers"             element={<Careers />} />
           <Route path="/digital-initiatives" element={<DigitalInitiatives />} />
           <Route path="/contact"             element={<Contact />} />
+          <Route path="/services/:serviceId" element={<ServiceDetail />} />  {/* ✅ YE ADD KARO */}
         </Routes>
       </BrowserRouter>
     </LanguageProvider>
