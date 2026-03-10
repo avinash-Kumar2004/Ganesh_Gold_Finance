@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "./Common/Navbaar";
 import Navbar from "./Common/Navbaar";
-import ServiceDetail from "./pages/ServiceDetail";  // ✅ pehle se hai
+import ServiceDetail from "./pages/Servicedetail";  // ✅ pehle se hai
 
 import Home               from "./component/Home";
 import About              from "./component/About";
