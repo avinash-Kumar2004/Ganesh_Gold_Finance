@@ -3,6 +3,8 @@ import { LanguageProvider } from "./Common/Navbaar";
 import Navbar from "./Common/Navbaar";
 import ServiceDetail from "./pages/Servicedetail"; 
 import ScrollToTop from "./ScrollToTop"; // ✅ pehle se hai
+import InvestmentPlanDetail from "./Investor/Investmentplandetail";
+
 // import ScrollManager from "./ScrollManager";
 
 import Home               from "./component/Home";
@@ -31,6 +33,7 @@ const App = () => {
           <Route path="/digital-initiatives" element={<DigitalInitiatives />} />
           <Route path="/contact"             element={<Contact />} />
           <Route path="/services/:serviceId" element={<ServiceDetail />} />  {/* ✅ YE ADD KARO */}
+          <Route path="/investors/:planId" element={<InvestmentPlanDetail />} />
         </Routes>
       </BrowserRouter>
     </LanguageProvider>
